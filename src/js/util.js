@@ -77,3 +77,49 @@ export async function convertToJson(res) {
 
   }
 }
+
+export function buildWeatherCards(weatherData) {
+  const captionDesc = document.querySelector(".container-2");
+
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  const desc = weatherData.weather[0].description;
+  const speed = weatherData.wind.speed;
+  const temp = weatherData.main.temp;
+  const name = weatherData.name;
+  const latitude = weatherData.coord.lat;
+  const longitude = weatherData.coord.lon;
+  let degrees = weatherData.wind.deg;
+
+  let section = document.createElement("section");
+  let image = document.createElement("img");
+  let p1 = document.createElement("p");
+  let p2 = document.createElement("p");
+  let p3 = document.createElement("p");
+  let h6 = document.createElement("h6");
+  let p5 = document.createElement("p");
+  let p6 = document.createElement("p");
+  let p7 = document.createElement("p");
+
+  let description = desc[0].toUpperCase() + desc.slice(1);
+
+  image.setAttribute("src", iconsrc);
+  image.setAttribute("alt", desc);
+  p1.innerHTML = `<strong>Description:</strong> ${description}`;
+  p2.innerHTML = `<strong>Speed:</strong> ${speed}`;
+  p3.innerHTML = `<strong>Temperature:</strong> ${temp}`;
+  h6.innerHTML = `Weather Forecast for <strong>${name}, GB<strong>`;
+  p5.innerHTML = `<strong>Latitude:</strong> ${latitude}`;
+  p6.innerHTML = `<strong>Longitude:</strong> ${longitude}`;
+  p7.innerHTML = `<strong>${degrees}</strong>&degF`;
+
+  section.appendChild(h6);
+  section.appendChild(image);
+  section.appendChild(p7);
+  section.appendChild(p1);
+  section.appendChild(p2);
+  section.appendChild(p3);
+  section.appendChild(p5);
+  section.appendChild(p6);
+
+  captionDesc.append(section);
+}
