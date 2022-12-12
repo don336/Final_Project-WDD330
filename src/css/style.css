@@ -52,9 +52,14 @@ input {
   color: black;
 }
 
+.deleteBtn {
+  background: none;
+  border: none;
+  margin-left: 5px;
+}
+
 .cart-button:hover {
-  width: 26px;
-  height: 26px;
+  color:#00635D;
   transition: width 2s;
 }
 

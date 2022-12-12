@@ -16,7 +16,7 @@ if(product){
     par1.innerHTML = `Name: ${product.ProductName}`
  
     const par2 = document.createElement('p')
-    par2.innerHTML = `Amount: ${product.ProductAmount}`
+    par2.innerHTML = `Amount: $${product.ProductAmount}`
  
     const par3 = document.createElement('p')
     par3.innerHTML = `Details: ${product.ProductDetails}`
@@ -35,8 +35,8 @@ if(product){
     
  
    }
-
-   document.querySelector(".add-to-cart").addEventListener('click', (e)=>{
+   const addToCart = document.querySelector(".add-to-cart")
+   addToCart.addEventListener('click', (e)=>{
     e.preventDefault()    
         let cartItems = getLocalStorage("so-cart")
         if(!cartItems){
@@ -48,11 +48,16 @@ if(product){
         
         setLocalStorage("so-cart", cartItems)
 
-      const no_of_items = document.querySelector(".cart-items")
+      // const no_of_items = document.querySelector(".cart-items")
 
-      no_of_items.innerHTML = cartItems.length
-      setLocalStorage("no_of_items", cartItems.length)
+      // no_of_items.innerHTML = cartItems.length
+      // setLocalStorage("no_of_items", cartItems.length)
 
-      const res = getLocalStorage("no_of_items")
-      no_of_items.innerHTML = res
+      // const res = getLocalStorage("no_of_items")
+      // no_of_items.innerHTML = res
+        // setTimeout(()=>{
+        //   addToCart.setAttribute("value", "Added To Cart")
+        // }, 3000 )
+      
+      
    })

@@ -3,7 +3,7 @@
     {
       "ProductName": "Wireless sound-pro Bluetooth",
       "ProductId": "BT11180",
-      "ProductAmount": "$40.00",
+      "ProductAmount": "40.00",
       "ProductDetails": "Best products with a guaranteed longertivity",
       "ProductSeller": "Sold by AlfinTech",
       "ProductImage": "/images/wireless sound bluetooth.jpg"
@@ -12,7 +12,7 @@
     {
       "ProductName": "FHD Smart Android LED",
       "ProductId": "FH10002",
-      "ProductAmount": "$113.00",
+      "ProductAmount": "113.00",
       "ProductDetails": "Guaranteed durability",
       "ProductSeller": "Sold by De Eco",
       "ProductImage": "/images/smart android led.png"
@@ -21,7 +21,7 @@
     {
       "ProductName": "Player Micro Set",
       "ProductId": "PMS210",
-      "ProductAmount": "$21.50",
+      "ProductAmount": "21.50",
       "ProductDetails": "Long lasting with good sound",
       "ProductSeller": "Ulesson",
       "ProductImage": "/images/Player micro set.jpg"
@@ -30,7 +30,7 @@
     {
       "ProductName": "Wireless Controller",
       "ProductId": "WC3002",
-      "ProductAmount": "$9.00",
+      "ProductAmount": "9.00",
       "ProductDetails": "Best feel and comfort",
       "ProductSeller": "Okeymaria",
       "ProductImage": "/images/Wireless controller.png"
@@ -39,7 +39,7 @@
     {
       "ProductName": "JBL Rechargeable",
       "ProductId": "K4118",
-      "ProductAmount": "$15.00",
+      "ProductAmount": "15.00",
       "ProductDetails": "Best in sound production",
       "ProductSeller": "Fulcrum Store",
       "ProductImage": "/images/Jbl rechargeable.jpg"
@@ -48,7 +48,7 @@
     {
       "ProductName": "Home Theater",
       "ProductId": "LG1250W",
-      "ProductAmount": "$17.80",
+      "ProductAmount": "17.80",
       "ProductDetails": "Guaranteed durability",
       "ProductSeller": "Sunnyside Elect",
       "ProductImage": "/images/Home theater.jpg"
@@ -57,7 +57,7 @@
     {
       "ProductName": "Sony Ps4 Slim",
       "ProductId": "SP900C",
-      "ProductAmount": "$66.00",
+      "ProductAmount": "66.00",
       "ProductDetails": "Guaranteed durability",
       "ProductSeller": "Alphakashonline",
       "ProductImage": "/images/Sony ps4 slim.jpg"
@@ -66,7 +66,7 @@
     {
       "ProductName": "Apple Airpods",
       "ProductId": "AA550",
-      "ProductAmount": "23.50",
+      "ProductAmount": "3.50",
       "ProductDetails": "Long lasting batteries",
       "ProductSeller": "Crown More",
       "ProductImage": "/images/Apple Airpods.jpg"
@@ -75,7 +75,7 @@
     {
       "ProductName": "ChromeCast",
       "ProductId": "CC6611",
-      "ProductAmount": "$59.43",
+      "ProductAmount": "59.43",
       "ProductDetails": "Best offered experience",
       "ProductSeller": "Mabel Magestic",
       "ProductImage": "/images/chrome cast.jpg"
@@ -84,7 +84,7 @@
     {
       "ProductName": "Freepods",
       "ProductId": "FP0009",
-      "ProductAmount": "$16.50",
+      "ProductAmount": "16.50",
       "ProductDetails": "Best product and durability",
       "ProductSeller": "Phemtem Concept",
       "ProductImage": "/images/Free pods.webp"
@@ -93,7 +93,7 @@
     {
       "ProductName": "PS2 Memory Card",
       "ProductId": "PMC111",
-      "ProductAmount": "$12.00",
+      "ProductAmount": "12.00",
       "ProductDetails": "Large space with good quality",
       "ProductSeller": "ProdataFlex",
       "ProductImage": "/images/Ps2 Memory card.jpg"
@@ -102,7 +102,7 @@
     {
       "ProductName": "HDMI Cable",
       "ProductId": "VGC1100",
-      "ProductAmount": "$15.00",
+      "ProductAmount": "15.00",
       "ProductDetails": "Flexible and durable",
       "ProductSeller": "Latterglory",
       "ProductImage": "/images/vga cable.jpg"
@@ -111,7 +111,7 @@
     {
       "ProductName": "UPS Battery",
       "ProductId": "UPB4422",
-      "ProductAmount": "$42.00",
+      "ProductAmount": "42.00",
       "ProductDetails": "Durable and Reliable",
       "ProductSeller": "Excellent Collins",
       "ProductImage": "/images/ups battery.jpg"
@@ -120,7 +120,7 @@
     {
       "ProductName": "HDMI Cords",
       "ProductId": "HDC8800",
-      "ProductAmount": "$25.00",
+      "ProductAmount": "25.00",
       "ProductDetails": "Reliable and durable",
       "ProductSeller": "Ibec Pacific",
       "ProductImage": "/images/HDMI cords.jpg"
@@ -129,7 +129,7 @@
     {
       "ProductName": "Dstv Explorer",
       "ProductId": "DSE7777",
-      "ProductAmount": "$55.00",
+      "ProductAmount": "55.00",
       "ProductDetails": "High signal receiver",
       "ProductSeller": "Device Pro",
       "ProductImage": "/images/Dstv Explorer.jpg"
@@ -138,7 +138,7 @@
     {
       "ProductName": "Universal Surge Travel Adapter",
       "ProductId": "UA6688",
-      "ProductAmount": "$17.85",
+      "ProductAmount": "17.85",
       "ProductDetails": "Durable and Reliable",
       "ProductSeller": "BlueDot",
       "ProductImage": "/images/Universal Adapter.jpg"
@@ -147,7 +147,7 @@
     {
       "ProductName": "AV Cable Audio Cable",
       "ProductId": "AV1100",
-      "ProductAmount": "$3.99",
+      "ProductAmount": "3.99",
       "ProductDetails": "Flexible and durable",
       "ProductSeller": "Jokal Systems",
       "ProductImage": "/images/Av cable audio.jpg"
@@ -156,7 +156,7 @@
     {
       "ProductName": "Charging Station",
       "ProductId": "CS1110E",
-      "ProductAmount": "$32.00",
+      "ProductAmount": "32.00",
       "ProductDetails": "Durable and Compatible",
       "ProductSeller": "Eckofel",
       "ProductImage": "/images/Charging Station.jpg"
@@ -165,7 +165,7 @@
     {
       "ProductName": "USB Wall Charger",
       "ProductId": "USC229D",
-      "ProductAmount": "$16.99",
+      "ProductAmount": "16.99",
       "ProductDetails": "Extender with 4 USB Charging ports",
       "ProductSeller": "Suntech",
       "ProductImage": "/images/usb wall charger.jpg"
@@ -174,7 +174,7 @@
     {
       "ProductName": "Cable Ties",
       "ProductId": "CT9922M",
-      "ProductAmount": "$18.00",
+      "ProductAmount": "18.00",
       "ProductDetails": "6 inch wire straps for home office data",
       "ProductSeller": "samiJackz",
       "ProductImage": "/images/Cable Ties.jpg"

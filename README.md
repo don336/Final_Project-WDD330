@@ -1,4 +1,4 @@
-# EM shopiing App
+# EM shopping App
 
 ## Description
 
