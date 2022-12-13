@@ -25,8 +25,7 @@ export default class cartList {
             span.classList.add("price")
 
             span.innerHTML = `${item.ProductAmount}`
-
-            
+       
             par.appendChild(span)
             parent.appendChild(par)
          })

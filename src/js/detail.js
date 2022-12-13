@@ -1,7 +1,7 @@
-import { findItemById, getParams, getLocalStorage, setLocalStorage } from "./util.js";
+import { findItemById, getParams, getLocalStorage, setLocalStorage, alertMessage } from "./util.js";
 
-const id  = getParams("product")
-const product = await findItemById(id)
+const _id  = getParams("product")
+const product = await findItemById(_id)
 const container = document.querySelector('.product_detail')
 
 if(product){
@@ -47,7 +47,7 @@ if(product){
         console.log(product)
         
         setLocalStorage("so-cart", cartItems)
-
+        alertMessage(`${product.ProductName} has been Added to Cart!`)
       // const no_of_items = document.querySelector(".cart-items")
 
       // no_of_items.innerHTML = cartItems.length
@@ -61,3 +61,14 @@ if(product){
       
       
    })
+
+  //  removeItem.addEventListener('submit', deleteItem(_id))
+
+  //  function deleteItem(id){
+
+  //     let cartItems = getLocalStorage("so-cart")
+  //     const newArr = cartItems.filter((item)=> item.id === id)
+  //     setLocalStorage("so-cart", newArr)
+  //     console.log(newArr)
+  //  }
+
