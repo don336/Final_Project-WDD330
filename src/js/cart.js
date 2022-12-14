@@ -7,19 +7,21 @@ export default class cartList {
 
     async init() {
         const product = await getLocalStorage("so-cart")
+        console.log(product)
         this.createTemplate(product)
         this.calculateTotal(product)
-     
-  
     }
 
     createTemplate(product){
         const parent  = document.querySelector(".productDesc")
 
          const renderTemplate = product.forEach((item)=>{
+            const link = document.createElement('a')
+            link.setAttribute("href", `/detail.html?product=${item.ProductId}`)
+            link.classList.add("delbtn")
             const par = document.createElement("p")
             
-            par.innerHTML = `${item.ProductName}`
+            par.innerHTML = `${item.ProductName} <i class="fa-solid fa-trash"></i>`
 
             const span = document.createElement('span')
             span.classList.add("price")
@@ -27,7 +29,8 @@ export default class cartList {
             span.innerHTML = `${item.ProductAmount}`
        
             par.appendChild(span)
-            parent.appendChild(par)
+            link.appendChild(par)
+            parent.appendChild(link)
          })
 
          return renderTemplate
@@ -40,3 +43,4 @@ export default class cartList {
       
     }
 }
+

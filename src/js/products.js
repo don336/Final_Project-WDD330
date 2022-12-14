@@ -1,4 +1,4 @@
-import buildElectronicCards from "./util.js";
+import buildElectronicCards, {getLocalStorage} from "./util.js";
 
 
 const requestUrl = "http://localhost:8080/json/data.json";
@@ -16,6 +16,6 @@ export default class getElectronics {
     } else {
       throw Error(response.statusText);
     }
-
+  
   }
 }

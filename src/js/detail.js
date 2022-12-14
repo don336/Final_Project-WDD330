@@ -1,4 +1,4 @@
-import { findItemById, getParams, getLocalStorage, setLocalStorage, alertMessage } from "./util.js";
+import { findItemById, getParams, getLocalStorage, setLocalStorage, alertMessage, deleteMessage } from "./util.js";
 
 const _id  = getParams("product")
 const product = await findItemById(_id)
@@ -36,22 +36,31 @@ if(product){
  
    }
    const addToCart = document.querySelector(".add-to-cart")
-   addToCart.addEventListener('click', (e)=>{
+   addToCart.addEventListener('click', async (e)=>{
     e.preventDefault()    
-        let cartItems = getLocalStorage("so-cart")
+        let cartItems = await getLocalStorage("so-cart")
         if(!cartItems){
           cartItems = []
         }
-        cartItems.push(product);
-    
-        console.log(product)
-        
-        setLocalStorage("so-cart", cartItems)
-        alertMessage(`${product.ProductName} has been Added to Cart!`)
-      // const no_of_items = document.querySelector(".cart-items")
+        const found = cartItems.find(data => (data.ProductId === product.ProductId))
 
-      // no_of_items.innerHTML = cartItems.length
-      // setLocalStorage("no_of_items", cartItems.length)
+        if(!found){
+          cartItems.push(product)
+          setLocalStorage("so-cart", cartItems)
+          alertMessage(`${product.ProductName} has been Added to Cart!`)
+          
+        } 
+
+        else{
+         alert("Product already exists")
+        }
+
+        const no_of_items = document.querySelector(".cart-items")
+  
+          no_of_items.innerHTML = cartItems.length
+         setLocalStorage("no_of_items", cartItems.length)
+       
+       
 
       // const res = getLocalStorage("no_of_items")
       // no_of_items.innerHTML = res
@@ -61,14 +70,26 @@ if(product){
       
       
    })
+   const removeItem = document.querySelector('.removeItem')
+   removeItem.addEventListener('click', (e)=>{
+    e.preventDefault()
+    deleteItem(_id)
+   })
 
-  //  removeItem.addEventListener('submit', deleteItem(_id))
+ async function deleteItem(id){
+      let cartItems = await getLocalStorage("so-cart")
+      cartItems.forEach(function(item, index){
+        if(id === item.ProductId){
+          cartItems.splice(index, 1)
+        }
+      })
+   
+        setLocalStorage("so-cart", cartItems)
+        deleteMessage(`${product.ProductName} has been Deleted!`)
+        const no_of_items = document.querySelector(".cart-items")
+     
+          no_of_items.innerHTML = cartItems.length
+   }
 
-  //  function deleteItem(id){
 
-  //     let cartItems = getLocalStorage("so-cart")
-  //     const newArr = cartItems.filter((item)=> item.id === id)
-  //     setLocalStorage("so-cart", newArr)
-  //     console.log(newArr)
-  //  }
 

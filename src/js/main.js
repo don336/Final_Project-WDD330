@@ -1,5 +1,6 @@
 import getElectronics from "./products.js";
 import getWeather from "./weather.js";
+import { getLocalStorage } from "./util.js";
 import cartList from "./cart.js";
 
 const products = new getElectronics();
@@ -13,4 +14,10 @@ const weather = new getWeather();
     products.init();
    
     weather.apiFetch();
+
+
+    let itemquantity = await getLocalStorage("no_of_items")
+    const no_of_items = document.querySelector(".cart-items")
+
+    no_of_items.innerHTML = itemquantity
 
